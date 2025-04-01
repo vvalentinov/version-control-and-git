@@ -7,4 +7,9 @@ public class Person
     public int Age { get; set; }
 
     public string Occupation { get; set; } = string.Empty;
+
+    public override string ToString()
+    {
+        return $"Name: {Name}; Age: {Age}; Occupation: {Occupation}";
+    }
 }
